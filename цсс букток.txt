@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Букток Україна</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background-color: #8b5cf6;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f3f3f3;
+    }
+
+    footer {
+      background-color: #8b5cf6;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      background-color: #fff7d6;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const trendingList = document.querySelector("#trending ol");
+      trendingList.addEventListener("click", (e) => {
+        if (e.target.tagName === 'LI') {
+          e.target.classList.toggle("highlight");
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Букток Україна</h1>
+    <nav>
+      <ul>
+        <li><a href="#genres">Жанри</a></li>
+        <li><a href="#trending">Актуальне</a></li>
+        <li><a href="#ratings">Рейтинги</a></li>
+        <li><a href="#buy">Де купити</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="genres">
+      <h2>Популярні жанри книг</h2>
+      <ul>
+        <li><strong>Фентезі:</strong> магія, чарівні світи, пригоди (Гаррі Поттер, Тінь і Кістка)</li>
+        <li><strong>Романтика:</strong> емоції, кохання, драма (Після, З мого вікна)</li>
+        <li><strong>Детективи:</strong> загадки, злочини, розслідування (Шерлок Голмс, Дівчина у потягу)</li>
+        <li><strong>Наукова фантастика:</strong> майбутнє, технології, космос (451° за Фаренгейтом)</li>
+        <li><strong>Психологічна драма:</strong> глибокі теми, внутрішні переживання (Маленьке життя)</li>
+        <li><strong>Нон-фікшн:</strong> реальні історії, біографії, саморозвиток (Атомні звички)</li>
+      </ul>
+    </section>
+
+    <section id="trending">
+      <h2>Актуальні книги на сьогодні</h2>
+      <ol>
+        <li><strong>"Дівчина з поїзда"</strong> — Пола Гоукінс</li>
+        <li><strong>"Атомні звички"</strong> — Джеймс Клір</li>
+        <li><strong>"Маленьке життя"</strong> — Ханья Янагихара</li>
+        <li><strong>"Після"</strong> — Анна Тодд</li>
+        <li><strong>"Тінь і Кістка"</strong> — Лі Бардуго</li>
+      </ol>
+      <p><em>Натисни на книгу, щоб виділити улюблену!</em></p>
+    </section>
+
+    <section id="ratings">
+      <h2>Рейтинги книг</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Книга</th>
+            <th>Автор</th>
+            <th>Оцінка (з 5)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Атомні звички</td>
+            <td>Джеймс Клір</td>
+            <td>4.8</td>
+          </tr>
+          <tr>
+            <td>Маленьке життя</td>
+            <td>Ханья Янагихара</td>
+            <td>4.7</td>
+          </tr>
+          <tr>
+            <td>Тінь і Кістка</td>
+            <td>Лі Бардуго</td>
+            <td>4.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="buy">
+      <h2>Де купити книги в Україні</h2>
+      <ul>
+        <li><a href="https://www.yakaboo.ua/" target="_blank">Yakaboo</a></li>
+        <li><a href="https://book24.ua/" target="_blank">Book24</a></li>
+        <li><a href="https://knygy.com.ua/" target="_blank">Книгарня "Є"</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Букток Україна. Всі права захищено.</p>
+  </footer>
+</body>
+</html>
